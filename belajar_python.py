@@ -322,3 +322,62 @@ print(firstPerson) # {'first_name': 'Hana', 'last_name': 'Malika'}
 # Untuk menghapus semua item, kita bisa menggunakan method "clear"
 firstPerson.clear()
 print(firstPerson) # {}
+
+#FUNCTION
+#Function adalah blok kode yang digunakan untuk mengeksekusi kode tertentu. Function bisa menerima inputan (parameter) dan mengembalikan output (return value).
+#Function create
+# Membuat function untuk menjumlahkan 2 angka
+# Membuat Function baru dengan nama belajar_python
+def belajar_python():
+    print("Halo")
+
+# Memanggil Function "say_hello"
+belajar_python() # Halo
+
+#Function arguments 1
+# Membuat Function dengan nama belajar_python yang memiliki satu Arguments "name"
+def belajar_python(name):
+    print("Halo, Saya %s" % name)
+
+# Memanggil Function belajar_python dengan Arguments "name" berupa string dengan value "Rhevan"
+belajar_python("Rhevan") # Halo, Saya Rhevan
+#Function arguments 2
+# Membuat Function dengan nama belajar_python yang memiliki dua Arguments: "name" dan "age"
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur saya %d" % (name, age))
+
+# Memanggil Function belajar_python 
+# dengan Arguments "name" berupa string dengan value "Rhevan"
+# dan Arguments "age" berupa integer dengan value "16"
+belajar_python("Rhevan", 16) # Halo, Saya Rhevan
+
+#Function arbitrary arguments
+# Membuat Function dengan nama belajar_python
+# yang memiliki Arbitrary Arguments dengan nama "names"
+def belajar_python(*names):
+    for name in names:
+        print("Halo, Saya %s" % name)
+
+# Karena Function di atas memiliki Arbitrary Arguments, 
+# maka kita bisa mengirimkan banyak value sebagai Arguments ke dalam Function tersebut
+belajar_python("Rhevan", "Fika", "Yudi")
+
+#Function keyword arguments 
+def belajar_python(**student):
+    print("Halo, Saya %s. Umur Saya %d" % (student['name'], student['age']))
+
+# Memanggil Function belajar_python dengan Arbitrary Keyword Arguments
+belajar_python(age=16, name="Rhevan") # Halo, Saya Rhevan. Umur Saya 16
+
+#Function default value arguments
+# Membuat Function belajar_python dengan Arguments "name" dan menentukan Default valuenya sebagai "Alien".
+def belajar_python(name="Alien"):
+    print("Halo, Saya %s" % name)
+
+# Memanggil Function belajar_python tanpa mengirimkan Arguments nya.
+belajar_python() # Halo, Saya Alien
+
+
+
+
+
