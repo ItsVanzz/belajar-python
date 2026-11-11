@@ -91,3 +91,31 @@ print(x)  # 10
 
 del x
 # print(x)  # ❌ Error karena variable sudah dihapus
+
+#Konstanta
+# konvensi penulisan konstanta
+PI = 3.14159
+MAX_USERS = 100
+APP_NAME = "Aplikasi Belajar Python"
+# walaupun  secara teknis nilai tersebut masih bisa diubah, developer sebaiknya tidak mengubahnya karena melanggar konvensi penamaan konstanta.
+#PI = 3.14  # ❌ Secara aturan Python boleh, tapi sebaiknya jangan dilakukan
+# Konstanta di Dalam Module
+# constants.py
+PI = 3.14159
+GRAVITY = 9.8
+MAX_RETRY = 3
+# lalu, konstanta tersebut bisa digunakan di file python lain dengan cara mengimpor:
+from constants import PI, GRAVITY, MAX_RETRY
+
+print("Nilai PI:", PI)
+print("Gravitasi:", GRAVITY)
+print("Maksimum Percobaan:", MAX_RETRY)
+# Contoh Penggunaan Konstanta
+TAX_RATE = 0.1  # 10% pajak
+
+harga_barang = 50000
+total = harga_barang + (harga_barang * TAX_RATE)
+
+print("Total harga:", total)
+
+
