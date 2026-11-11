@@ -314,3 +314,35 @@ print(ganjil | genap)   # Union
 print(ganjil & genap)   # Intersection
 print(ganjil - genap)   # Difference
 
+#Dictionaries
+# Membuat dictionary sederhana
+mahasiswa = {
+    "nama": "Rhevan",
+    "umur": 20,
+    "jurusan": "Teknik Informatika"
+}
+
+print(mahasiswa)
+# Mengakses Data
+print(mahasiswa["nama"])    # Rhevan
+print(mahasiswa.get("umur")) # 20
+# Menambahkan dan Mengubah Data
+mahasiswa["angkatan"] = 2028   # Menambah data baru
+mahasiswa["umur"] = 21         # Mengubah value umur
+
+print(mahasiswa)
+# Menghapus Data
+mahasiswa.pop("jurusan")   # Menghapus dengan key
+del mahasiswa["nama"]      # Menghapus dengan del
+
+print(mahasiswa)
+# Iterasi Dictionary
+for key, value in mahasiswa.items():
+    print(key, ":", value)
+# Nested Dictionary
+kampus = {
+    "mahasiswa1": {"nama": "Rhevan", "umur": 21},
+    "mahasiswa2": {"nama": "Siti", "umur": 22}
+}
+
+print(kampus["mahasiswa1"]["nama"])  # Rhevan
