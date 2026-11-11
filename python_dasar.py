@@ -53,3 +53,41 @@ print(type(angka))  # <class 'set'>
 angka = {1, 2, 3, 3, 4}
 print(angka)  # {1, 2, 3, 4}
 print(type(angka))  # <class 'set'>
+
+#Variabel
+# Membuat variabel
+nama = "Rhevan"
+umur = 16
+tinggi = 162
+is_active = True
+
+print(nama)      # Rhevan
+print(umur)      # 16
+print(tinggi)    # 162
+print(is_active) # True
+# Aturan penamaan
+# contoh yang benar
+first_name = "Budi"
+total_harga = 10000
+# contoh yang salah
+# 2nama = "Salah"     # ❌ diawali angka
+# class = "Informatika" # ❌ keyword Python
+# Multiple Assignment
+a, b, c = 10, 20, 30
+print(a, b, c)  # 10 20 30
+#juga bisa memberika nilai yang sama ke beberapa variabel sekaligus
+x = y = z = 100
+print(x, y, z)  # 100 100 100
+# Mengecek Tipe Data Variabel
+nama = "Rhevan"
+umur = 16
+tinggi = 162
+
+print(type(nama))   # <class 'str'>
+print(type(umur))   # <class 'int'>
+print(type(tinggi)) # <class 'float'>
+x = 10
+print(x)  # 10
+
+del x
+# print(x)  # ❌ Error karena variable sudah dihapus
