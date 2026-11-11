@@ -22,3 +22,34 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#Tipe Data Dasar
+# Integer
+umur = 25
+print(type(umur))  # <class 'int'>
+# Float
+tinggi = 170.5
+print(type(tinggi))  # <class 'float'>
+# String(str)
+nama = "Rhevan"
+print(type(nama))  # <class 'str'>
+# Boolean(bool)
+is_active = True
+print(type(is_active))  # <class 'bool'>
+# List
+buah = ["apel", "jeruk", "mangga"]
+print(type(buah))  # <class 'list'>
+# Tuple
+warna = ("merah", "hijau", "biru")
+print(type(warna))  # <class 'tuple'>
+# Dictionary(dict)
+mahasiswa = {"nama": "Rhevan", "umur": 16, "jurusan": "RPL"}
+print(type(mahasiswa))  # <class 'dict'>
+# Set
+angka = {1, 2, 3, 3, 4}
+print(angka)  # {1, 2, 3, 4}
+print(type(angka))  # <class 'set'>
+#Konversi Tipe Data
+angka = {1, 2, 3, 3, 4}
+print(angka)  # {1, 2, 3, 4}
+print(type(angka))  # <class 'set'>
