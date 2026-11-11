@@ -118,4 +118,59 @@ total = harga_barang + (harga_barang * TAX_RATE)
 
 print("Total harga:", total)
 
+#Operator
+# Operator Aritmatika
+a = 10
+b = 3
 
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.333...
+print(a // b)  # 3
+print(a % b)   # 1
+print(a ** b)  # 1000
+# Operator Perbandingan
+x = 5
+y = 10
+
+print(x == y)  # False
+print(x != y)  # True
+print(x > y)   # False
+print(x < y)   # True
+print(x >= y)  # False
+print(x <= y)  # True
+# Operator Logika
+a = True
+b = False
+
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+#Operator Penugasan
+x = 10
+
+x += 5
+print(x)  # 15
+
+x -= 3
+print(x)  # 12
+
+x *= 2
+print(x)  # 24
+
+x /= 4
+print(x)  # 6.0
+#Operator Keanggotaan(Membership)
+buah = ["apel", "jeruk", "mangga"]
+
+print("apel" in buah)      # True
+print("pisang" not in buah) # True
+#Operator Identitas
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a is b)     # True (b menunjuk objek yang sama dengan a)
+print(a is c)     # False (c objek berbeda walau isinya sama)
+print(a == c)     # True (nilai isinya sama)
