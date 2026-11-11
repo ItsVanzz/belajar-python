@@ -221,3 +221,46 @@ for i in range(1, 6):
 # 1
 # 2
 # 4
+
+#Function
+# Membuat Function Sederhana
+def sapa():
+    print("Halo, selamat datang di Python!")
+
+# Memanggil function
+sapa()
+# Function dengan Parameter
+def sapa_nama(nama):
+    print(f"Halo {nama}, semoga harimu menyenangkan!")
+
+sapa_nama("Rhevan")
+sapa_nama("Pebrian")
+# Function dengan Return Value
+def tambah(a, b):
+    return a + b
+
+hasil = tambah(5, 7)
+print("Hasil penjumlahan:", hasil)
+# Default Parameter
+def sapa_orang(nama="Teman"):
+    print(f"Halo {nama}!")
+
+sapa_orang("Rhevan")  # Menggunakan parameter
+sapa_orang()        # Menggunakan default
+# Function dengan Banyak Argumen (*args dan *kwargs)
+# *args
+def jumlahkan(*angka):
+    total = sum(angka)
+    print("Total:", total)
+
+jumlahkan(1, 2, 3, 4, 5)  # Bisa input banyak angka
+
+
+# **kwargs
+def biodata(**data):
+    for key, value in data.items():
+        print(f"{key}: {value}")
+
+biodata(nama="Rhevan", umur=16, kota="Subang")
+
+
