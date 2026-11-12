@@ -692,3 +692,27 @@ import math
 
 print(math.sqrt(16))   # Akar kuadrat → 4.0
 print(math.pi)         # Nilai π → 3.141592653589793
+
+#Package
+# Struktur Package
+#my_package/
+#│
+#├── __init__.py
+#├── operasi.py
+#├── geometri.py
+# Menggunakan Package
+from my_package import operasi, geometri
+
+print(operasi.kurang(10, 4))        # Output: 6
+print(geometri.luas_persegi(5))     # Output: 25
+# Import Fungsi Tertentu dari Package
+from my_package.operasi import kurang
+from my_package.geometri import luas_persegi
+
+print(kurang(20, 7))          # Output: 13
+print(luas_persegi(8))        # Output: 64
+# Package di Python Standar Library
+import os
+print(os.getcwd())   # Menampilkan direktori kerja saat ini
+import datetime
+print(datetime.date.today())  # Menampilkan tanggal hari ini
